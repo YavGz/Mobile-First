@@ -1,0 +1,30 @@
+/*
+Convencion / Estandar 
+1- Posicionamiento
+2- Modelo de caja (Box model)
+3- Tipografia
+4- Temas visuales
+5- Otros
+*/
+:root {
+  /* colores */
+  --bitcoin-principal: #F7931A ;
+  --bitcoin-soft: #FFE9D5 ;
+  --secondary-color: #1a9af7 ;
+  --secondary-soft: #E7F5FF ;
+  --warm-dark: #201E1C ;
+  --black: #282623 ;
+  --medium-color: #BABABA  ;
+  --off-white: #faf8f7 ;
+  --white: #FFF ;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
