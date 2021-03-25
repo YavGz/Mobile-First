@@ -143,6 +143,9 @@ main {
   padding-right: 30%;
   margin-bottom: 10px;
 }
+.secondary h2 {
+  color: var(--secondary-color);
+}
 .grid-coins-container {
   display: grid;
   grid-template: repeat(4, 1fr)/ 1fr 1fr;
@@ -178,7 +181,7 @@ main {
 .bull span {
   background-image: url('../assets/icons/trending-up.svg');
 }
-.row-rigth-change {
+.row-change {
   display: inline-block;
   width: 10px;
   height: 15px;
@@ -187,17 +190,26 @@ main {
   background-size: cover;
   background-position: center;
   position: relative;
-  bottom: 100px;
-  left: 140px;
+  bottom: 80px;
+  left: 135px;
 }
+.row-left {
+  background-image: url('../assets/icons/left-arrow.svg');
+  left: -135px;
+}
+
 .upgrade-date {
   width: 60%;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding: 8px;
   border-radius: 5px;
   font-size: 1.2rem;
   font-family: 'inter', sans-serif;
   background-color: var(--bitcoin-soft);
   color: var(--warm-dark);
+}
+.upgrade-comisiones {
+  background-color: var(--secondary-soft);
 }
