@@ -221,6 +221,9 @@ main {
 
 .main-product-detail {
   width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 20px;
   background-color: var(--warm-dark);
   color: var(--white);
   justify-content: center;
@@ -231,33 +234,76 @@ main {
   position: absolute;
   min-width: 46px;
   min-height: 25px;
-  margin-top: -12px;
+  margin-top: -20px;
   background-image: url('../assets/icons/batata.svg');
   background-repeat: no-repeat;
   background-position: center;
-  right: 44%;
+  right: calc(50% - 23px);
 }
 .main-product-detail  div {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .main-product-detail div h2 {
   font-size: 2.4rem;
+  font-weight: 700;
   line-height: 2.6rem;
   margin-bottom: 15px;
 }
 .main-product-detail div p {
   font-size: 1.4rem;
   color: var(--medium-color);
+  margin-bottom: 25px;
 }
 
 /* -------------product cards  */
 
 .product-detail--card {
-  background-color: var(--warm-dark);
-  width: 90%;
+  width: 95%;
+  min-width: 228px;
+  max-width: 400px;
   height: auto;
-  margin: 0 auto;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  text-align: left;
+}
+.product-card--icon {
+  display: inline-block;
+  width: 100%;
+  min-width: 20px;
+  max-width: 30px;
+  min-height: 25px;
+  max-height: 30px;
+  margin-bottom: 5px;
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  background-image: url('../assets/icons/clock.svg');
+}
+.eye {
+  background-image: url('../assets/icons/eye.svg');
+}
+.money {
+  background-image: url('../assets/icons/dollar-sign.svg');
+}
+.check {
+  background-image: url('../assets/icons/check-circle.svg');
+}
+.product-card--title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.product-card--body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--medium-color);
 }
