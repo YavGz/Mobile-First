@@ -101,6 +101,9 @@ main {
   height: auto;
   background-color: var(--off-white);
 }
+
+/* -------------- tablas  */
+
 .main-exchange-container {
   width: 100%;
   height: auto;
@@ -191,11 +194,11 @@ main {
   background-position: center;
   position: relative;
   bottom: 80px;
-  left: 135px;
+  left: 43%;
 }
 .row-left {
   background-image: url('../assets/icons/left-arrow.svg');
-  left: -135px;
+  left: -43%;
 }
 
 .upgrade-date {
@@ -214,7 +217,10 @@ main {
   background-color: var(--secondary-soft);
 }
 
+/* ------- seccion de beneficios */
+
 .main-product-detail {
+  width: 100%;
   background-color: var(--warm-dark);
   color: var(--white);
   justify-content: center;
@@ -229,9 +235,29 @@ main {
   background-image: url('../assets/icons/batata.svg');
   background-repeat: no-repeat;
   background-position: center;
-  right: 135px;
+  right: 44%;
 }
+.main-product-detail  div {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.main-product-detail div h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 15px;
+}
+.main-product-detail div p {
+  font-size: 1.4rem;
+  color: var(--medium-color);
+}
+
+/* -------------product cards  */
 
 .product-detail--card {
   background-color: var(--warm-dark);
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
