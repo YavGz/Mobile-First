@@ -374,3 +374,15 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 60, 0.16);
 }
+.head-card-plan {
+  width: 100px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: var(--bitcoin-principal);
+  color: var(--white);
+  left: calc(50% - 50px);
+  bottom: calc(100% - 16px);
+}
