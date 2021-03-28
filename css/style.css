@@ -27,6 +27,7 @@ Convencion / Estandar
 html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -120,21 +121,21 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-exchange-container--title, .head-title--white {
+.main-exchange-container--title{
   width: 100%;
   min-width: 288px;
   max-width: 900px;
   padding: 0 15px;
   text-align: center;
 }
-.main-exchange-container--title h2, .head-title--white h2 {
+.main-exchange-container--title h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.6rem;
   margin-bottom: 20px;
   color: var(--black);
 }
-.main-exchange-container--title p, .head-title--white p {
+.main-exchange-container--title p{
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
@@ -320,7 +321,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  margin-bottom: 50px;
 }
 .bitcoin-img-container h2 {
   padding-top: 60px;
@@ -328,4 +328,49 @@ main {
   font-weight: 700;
   line-height: 2.6rem;
   color: var(--white);
+}
+
+ /* -------- stitulo de planes  */
+
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding: 70px 0;
+  text-align: center;
+}
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.plans--title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.plans--title p {
+  padding-top: 30px;
+  padding-bottom: ;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+/* ----------- plan cards  */
+
+.plans-container--card {
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 60, 0.16);
 }
