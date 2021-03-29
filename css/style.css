@@ -362,17 +362,34 @@ main {
 
 /* ----------- plan cards  */
 
+.plans-container--slider {
+  display: flex;
+  /* gap: 25px; */
+  padding-left: 80px;
+  height: 316px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plans-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 10px 0 10px;
   padding: 0 15px;
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 60, 0.16);
+}
+.space-for-last-card p{
+  width: 100px;
+  height: auto;
+  padding: 30px;
 }
 .head-card-plan {
   width: 100px;
