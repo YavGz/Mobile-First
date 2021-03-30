@@ -181,16 +181,17 @@ main {
   display: grid;
   grid-template: repeat(4, 1fr)/ 1fr 1fr;
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
   margin: 0 auto;
   background-color: var(--white);
   font-size: 1.6rem;
   border-radius: 15px;
 }
 .item-grid {
+  position: relative;
   text-align: left;
   padding: 8px 0;
-  padding-left: 20%;
+  padding-left: 22%;
   font-family: 'inter', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
@@ -202,10 +203,11 @@ main {
   color: #757575;
 }
 .item-grid span {
-  display: inline-block;
-  width: 20px;
-  height: 10px;
-  margin-left: 10%;
+  position: absolute;
+  min-width: 20px;
+  min-height: 10px;
+  right: 20%;
+  top: 38%;
   background-image: url('../assets/icons/trending-down.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -231,7 +233,7 @@ main {
 }
 
 .upgrade-date {
-  width: 70%;
+  width: 72%;
   height: auto;
   margin: 15px auto;
   margin-bottom: 50px;
