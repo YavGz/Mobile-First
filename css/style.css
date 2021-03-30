@@ -76,7 +76,7 @@ header img {
   position: absolute;
   top: calc(100% - 24px);
 	left: calc(50% - 114.5px);
-  width: 229px;
+  min-width: 229px;
   height: 48px;
   padding-top: 15px;
   background-color: var(--off-white);
@@ -107,7 +107,9 @@ main {
 
 .main-exchange-container {
   width: 100%;
+  max-width: 900px;
   height: auto;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 30px;
   text-align: center;
@@ -127,6 +129,7 @@ main {
   max-width: 900px;
   padding: 0 15px;
   text-align: center;
+  margin: 0 auto;
 }
 .main-exchange-container--title h2 {
   font-size: 2.4rem;
@@ -178,6 +181,7 @@ main {
   display: grid;
   grid-template: repeat(4, 1fr)/ 1fr 1fr;
   width: 100%;
+  max-width: 400px;
   margin: 0 auto;
   background-color: var(--white);
   font-size: 1.6rem;
@@ -399,9 +403,9 @@ main {
 .plans-container--card {
   position: relative;
   scroll-snap-align: center;
-  width: 70%;
+  width: 100%;
   min-width: 190px;
-  max-width: 400px;
+  max-width: 280px;
   height: 250px;
   margin: 50px 10px 0 10px;
   padding: 0 15px;
@@ -409,7 +413,7 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 60, 0.16);
 }
-.space-for-last-card p{
+.space-for-last-card {
   width: 80px;
   height: auto;
   padding: 30px;

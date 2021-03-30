@@ -5,9 +5,14 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.exchange-slider {
+  overflow: hidden;
+}
 .plans-container--slider {
   justify-content: center;
   padding: 0px;
+  margin: 0;
+  overflow: hidden;
 }
 .space-for-last-card {
   display: none;
