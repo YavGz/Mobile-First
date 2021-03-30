@@ -76,7 +76,7 @@ header img {
   position: absolute;
   top: calc(100% - 24px);
 	left: calc(50% - 114.5px);
-  width: 229px;
+  min-width: 229px;
   height: 48px;
   padding-top: 15px;
   background-color: var(--off-white);
@@ -107,7 +107,9 @@ main {
 
 .main-exchange-container {
   width: 100%;
+  max-width: 900px;
   height: auto;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 30px;
   text-align: center;
@@ -127,6 +129,7 @@ main {
   max-width: 900px;
   padding: 0 15px;
   text-align: center;
+  margin: 0 auto;
 }
 .main-exchange-container--title h2 {
   font-size: 2.4rem;
@@ -142,6 +145,29 @@ main {
   margin-bottom: 30px;
   color: #757575;
 }
+
+/* ::-webkit-meter-even-less-good-value slider  */
+
+.exchange-slider {
+  display: flex;
+  /* width: auto; */
+  padding: 30px;
+  margin: auto 30px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.main-tables-container {
+  scroll-snap-align: center;
+  width: 95%;
+  padding: 0 10px;
+  min-width: 270px;
+  max-width: 600px;
+}
+.main-exchange-container .secondary {
+  padding-right: 20px;
+}
+
 .main-tables-container h2 {
   font-size: 1.8rem;
   color: var(--bitcoin-principal);
@@ -154,16 +180,18 @@ main {
 .grid-coins-container {
   display: grid;
   grid-template: repeat(4, 1fr)/ 1fr 1fr;
-  width: 75%;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   background-color: var(--white);
   font-size: 1.6rem;
   border-radius: 15px;
 }
 .item-grid {
+  position: relative;
   text-align: left;
   padding: 8px 0;
-  padding-left: 20%;
+  padding-left: 22%;
   font-family: 'inter', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
@@ -175,10 +203,11 @@ main {
   color: #757575;
 }
 .item-grid span {
-  display: inline-block;
-  width: 20px;
-  height: 10px;
-  margin-left: 10%;
+  position: absolute;
+  min-width: 20px;
+  min-height: 10px;
+  right: 20%;
+  top: 38%;
   background-image: url('../assets/icons/trending-down.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -187,7 +216,7 @@ main {
   background-image: url('../assets/icons/trending-up.svg');
 }
 .row-change {
-  display: inline-block;
+  /* display: inline-block; */
   width: 10px;
   height: 15px;
   background-image: url('../assets/icons/right-arrow.svg');
@@ -204,9 +233,9 @@ main {
 }
 
 .upgrade-date {
-  width: 60%;
+  width: 72%;
   height: auto;
-  margin: 0 auto;
+  margin: 15px auto;
   margin-bottom: 50px;
   padding: 8px;
   border-radius: 5px;
@@ -263,7 +292,7 @@ main {
 /* -------------product cards  */
 
 .product-detail--card {
-  width: 95%;
+  width: 100%;
   min-width: 228px;
   max-width: 400px;
   min-height: 150px;
@@ -330,12 +359,12 @@ main {
   color: var(--white);
 }
 
- /* -------- stitulo de planes  */
+ /* -------- titulo de planes  */
 
 .main-plans-container {
   width: 100%;
   min-width: 320px;
-  padding: 70px 0;
+  padding: 60px 0;
   text-align: center;
 }
 .plans--title {
@@ -353,7 +382,7 @@ main {
 }
 .plans--title p {
   padding-top: 30px;
-  padding-bottom: ;
+  /* padding-bottom: ; */
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
@@ -362,17 +391,34 @@ main {
 
 /* ----------- plan cards  */
 
+.plans-container--slider {
+  display: flex;
+  /* gap: 25px; */
+  padding-left: 80px;
+  height: 316px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plans-container--card {
   position: relative;
-  width: 70%;
-  min-width: 230px;
-  max-width: 300px;
+  scroll-snap-align: center;
+  width: 100%;
+  min-width: 190px;
+  max-width: 280px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 10px 0 10px;
   padding: 0 15px;
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 60, 0.16);
+}
+.space-for-last-card {
+  width: 80px;
+  height: auto;
+  padding: 30px;
 }
 .head-card-plan {
   width: 100px;
@@ -385,4 +431,95 @@ main {
   color: var(--white);
   left: calc(50% - 50px);
   bottom: calc(100% - 16px);
+}
+.month-plan, .medium-plan {
+  background-color: #bce1fc;
+  color: var(--warm-dark);
+}
+
+.plan-info-container {
+  padding: 30px 0 20px;
+}
+.plan-info-container h3 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.plan-card--price {
+  position: relative;
+  font-size: 5.2rem;
+  line-height: 6.3rem;
+  font-weight: 700;
+  font-family: 'Inter' , sans-serif;
+}
+.plan-card--price sup {
+  position: absolute;
+  left: calc(50% - 42px);
+  bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Inter' , sans-serif;
+}
+.plan-card--saving {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #757575;
+  padding: 5px 0 ;
+}
+.plan-card--cta {
+  min-width: 150px;
+  height: auto;
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid var(--bitcoin-principal);
+  border-radius: 5px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--off-white);
+}
+.plan-card--cta span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: url('../assets/icons/orange-right-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 13px;
+  right: 13px;
+}
+
+/* ------ footer  */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-principal);
+  /* justify-content: space-around; */
+}
+footer section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+  color: var(--bitcoin-soft);
+}
+.social-media li {
+  margin: 10px 0;
+}
+.social-media a {
+  text-decoration: none;
+  color: var(--bitcoin-soft);
 }
